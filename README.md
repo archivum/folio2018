@@ -1,6 +1,6 @@
-# vue-animations
+# archivum-folio
 
-> Boilerplate for animations in Vue JS
+> Archivum Portfolio 2018
 
 ## Build Setup
 
