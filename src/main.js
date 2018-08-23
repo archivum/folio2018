@@ -6,7 +6,6 @@ import router from './router'
 
 // Plugins
 import {TweenMax, TimelineMax} from "gsap/TweenMax";
-// Vue.use(TweenMax);
 
 Vue.config.productionTip = false
 

@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       animations: {
-        landing: {
+        home: {
           one: 'red',
           two: 'green',
           three: 'olive'
@@ -32,12 +32,12 @@ export default {
     }
   },
   methods: {
-      enter(el,done){
+    enter(el,done){
         let className = el.className.split(' ')[0]
         let tl = new TimelineMax();
-        tl.to('.' + className, 1, { backgroundColor: this.animations[className].one, scale: 3 })
-          .to('.' + className, 1, { backgroundColor: this.animations[className].two, scale: 1 })
-          .to('.' + className, 1, { backgroundColor: this.animations[className].three, rotation: '+360' })
+        tl.to('.' + className, 0.5, { backgroundColor: this.animations[className].one, scale: 3 })
+          .to('.' + className, 0.5, { backgroundColor: this.animations[className].two, scale: 1 })
+          .to('.' + className, 0.5, { backgroundColor: this.animations[className].three })
     },
     leave(el,done){
         let className = el.className.split(' ')[0]
@@ -54,13 +54,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import './../node_modules/bootstrap/scss/bootstrap.scss';
 </style>

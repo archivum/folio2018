@@ -1,7 +1,7 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import Router from 'vue-router'
 
-import Landing from '../views/Landing'
+import Home from '../views/Home'
 import PageOne from '../views/PageOne'
 import PageTwo from '../views/PageTwo'
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
   {
     path: '/',
-    component: Landing,
-    template: Landing
+    component: Home,
+    template: Home
   },
   {
     path: '/one',
